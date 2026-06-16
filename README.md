@@ -1,20 +1,32 @@
-# AIと作るHTMLスライド資料制作ワークフロー
+# AI HTML Slide Prompt Workflow
 
-授業や企画をHTMLスライド資料にまとめる作業を、毎回ゼロから考えずに進めるためのpromptワークフロー紹介です。
+HTMLスライド制作プロンプト集の使い方を、実際に使う人向けに案内するLPです。
 
-## 閲覧リンク
+## 公開ページ
 
-- 成果物を見る: https://uiharuyuki.github.io/niray-04_html-prompts/
-- プロンプトを見る: https://github.com/uiharuyuki/niray-04_html-prompts/tree/main/prompts
+- LP: https://uiharuyuki.github.io/niray-04_html-prompts/
+- Prompt: `prompts/`
+- LP仕様書: `docs/lp-spec.md`
 
-## 構成
+## 主な構成
 
-- `index.html`: 公開用HTMLスライド
-- `assets/`: CSS、JavaScript、画像、制作メモ
-- `assets/project.md`: 企画・構成・原稿・トーンの正本
-- `assets/image-assets.md`: 画像の役割・配置・ファイル名の正本
-- `prompts/`: 各工程で使うプロンプト
+- `index.html`: 公開LP
+- `assets/css/style.css`: LP用CSS
+- `assets/js/main.js`: LP用JavaScript
+- `assets/js/data.js`: `data/*.json` から生成される表示用データ
+- `data/prompts.json`: promptカードの正本データ
+- `data/examples.json`: 成果物プレビューの正本データ
+- `tools/build-data-js.js`: JSONから表示用データを生成
+- `tools/capture-first-views.js`: 成果物ページのファーストビュー撮影
+- `.github/workflows/update-screenshots.yml`: スクリーンショット定期更新
 
-## 公開
+## ローカル作業
 
-GitHub Pagesで `main` ブランチのルートを公開対象にします。
+```powershell
+npm install
+npm run build:data
+npm run screenshots
+```
+
+`screenshots` は `data/examples.json` のURLを開き、`assets/examples/screenshots/` にPNGを保存します。
+

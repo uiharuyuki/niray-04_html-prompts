@@ -1,0 +1,7 @@
+_archive/
+node_modules/
+.cache/
+playwright-report/
+test-results/
+npm-debug.log*
+

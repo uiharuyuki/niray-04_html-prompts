@@ -1,0 +1,42 @@
+[
+  {
+    "id": "kinoko-presentation",
+    "title": "きのこ派、勝利宣言",
+    "description": "きのこの山の魅力を、日常の使いやすさから提案するプレゼン資料。",
+    "label": "HTMLスライド",
+    "url": "https://nirayuki-slides.github.io/slide-archive/2026/06/kinoko-presentation/",
+    "sourceUrl": "https://github.com/nirayuki-slides/slide-archive/tree/main/2026/06/kinoko-presentation",
+    "screenshot": "assets/examples/screenshots/kinoko-presentation.png",
+    "featured": true
+  },
+  {
+    "id": "storyboard-html",
+    "title": "ゆるクエ 30秒PR動画 絵コンテ",
+    "description": "30秒PR動画の流れを、HTMLスライドとして見返せる絵コンテ資料。",
+    "label": "絵コンテ",
+    "url": "https://nirayuki-slides.github.io/slide-archive/2026/06/storyboard_html/",
+    "sourceUrl": "https://github.com/nirayuki-slides/slide-archive/tree/main/2026/06/storyboard_html",
+    "screenshot": "assets/examples/screenshots/storyboard-html.png",
+    "featured": true
+  },
+  {
+    "id": "inage-election",
+    "title": "いなげ若者選挙プロジェクト 提案資料",
+    "description": "投票済証明書、QR、地域回遊LPを軸にした地域提案型のHTMLスライド。",
+    "label": "提案資料",
+    "url": "https://nirayuki-slides.github.io/slide-archive/archive/2026/05/いなげ若者選挙プロジェクト%20提案資料/senkyo_2026-05-28/",
+    "sourceUrl": "https://github.com/nirayuki-slides/slide-archive/tree/main/archive/2026/05/いなげ若者選挙プロジェクト%20提案資料/senkyo_2026-05-28",
+    "screenshot": "assets/examples/screenshots/inage-election.png",
+    "featured": true
+  },
+  {
+    "id": "tiktok-cm",
+    "title": "共創型TikTok CM企画案",
+    "description": "ユーザー発の短尺CM案を企業が選び、公式CM化する流れをまとめた企画資料。",
+    "label": "企画資料",
+    "url": "https://nirayuki-slides.github.io/slide-archive/archive/2026/05/共創型TikTok%20CM企画案/tiktok_cm_proposal.html",
+    "sourceUrl": "https://github.com/nirayuki-slides/slide-archive/tree/main/archive/2026/05/共創型TikTok%20CM企画案",
+    "screenshot": "assets/examples/screenshots/tiktok-cm.png",
+    "featured": true
+  }
+]

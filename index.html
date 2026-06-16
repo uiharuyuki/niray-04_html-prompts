@@ -3,286 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AIと作るHTMLスライド資料制作ワークフロー</title>
-  <meta name="description" content="授業や企画をHTMLスライド資料にまとめる作業を、毎回ゼロから考えずに進めるためのpromptワークフロー紹介。">
-  <link rel="stylesheet" href="assets/style.css">
+  <title>AIと作るHTMLスライド制作プロンプト集</title>
+  <meta name="description" content="企画整理、画像設計、HTML化、レビューまでを流れで使えるHTMLスライド制作プロンプト集の使い方ガイド。">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-  <!-- ===== Navigation ===== -->
-  <header class="nav" aria-label="スライドナビゲーション">
-    <a class="nav__brand" href="#s1">AI × HTML Slide Workflow</a>
-    <nav class="nav__links">
-      <a href="#s1" data-target="s1"><span class="n">1</span><span class="lbl">表紙</span></a>
-      <a href="#s2" data-target="s2"><span class="n">2</span><span class="lbl">なぜ</span></a>
-      <a href="#s3" data-target="s3"><span class="n">3</span><span class="lbl">課題</span></a>
-      <a href="#s4" data-target="s4"><span class="n">4</span><span class="lbl">方針</span></a>
-      <a href="#s5" data-target="s5"><span class="n">5</span><span class="lbl">工程</span></a>
-      <a href="#s6" data-target="s6"><span class="n">6</span><span class="lbl">工夫</span></a>
-      <a href="#s7" data-target="s7"><span class="n">7</span><span class="lbl">使用例</span></a>
-      <a href="#s8" data-target="s8"><span class="n">8</span><span class="lbl">まとめ</span></a>
-    </nav>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="トップへ戻る">
+        <span class="brand__mark">AI</span>
+        <span>HTML Slide Prompts</span>
+      </a>
+      <nav class="nav" aria-label="ページ内ナビゲーション">
+        <a href="#examples">成果物</a>
+        <a href="#how">使い方</a>
+        <a href="#prompts">Prompt</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-
-    <!-- ===== Slide 1: 表紙 ===== -->
-    <section id="s1" class="slide slide--cover">
-      <div class="slide__inner cover">
-        <h1 class="sr-only">AIと作るHTMLスライド資料制作ワークフロー</h1>
-        <figure class="cover__visual reveal">
-          <img src="assets/01_cover.png"
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1 class="sr-only">AIと作るHTMLスライド制作プロンプト集</h1>
+        <p class="sr-only">企画からHTML化まで、流れで使える制作ワークフロー。</p>
+        <figure class="hero__visual">
+          <img src="assets/images/hero-main.png"
                width="1672"
                height="941"
-               alt="AIを使ったHTMLスライド制作ワークフローを紹介する表紙ビジュアル。右側にピンク髪の女子学生キャラクター、左にタイトル、周囲にproject.mdやimage-assets.mdなどの制作フロー要素が並ぶ。">
+               alt="AIと作るHTMLスライド制作プロンプト集。ピンク髪の制服姿のキャラクターがタブレットを持ち、タイトルを紹介しているキービジュアル。">
+          <figcaption class="hero__actions">
+            <a class="button" href="#examples">成果物を見る</a>
+            <a class="button button--ghost" href="#how">使い方を見る</a>
+          </figcaption>
         </figure>
-        <p class="cover__lead reveal">
-          授業・企画をHTMLスライド化するための、<br>
-          再利用できる<strong>prompt設計と制作フロー</strong>。
-        </p>
-        <p class="cover__meta reveal">制作ワークフロー紹介　/　発表対象：友達・先生</p>
-        <a class="scroll-hint" href="#s2" aria-label="次のスライドへ">▼</a>
       </div>
     </section>
 
-    <!-- ===== Slide 2: なぜ作ったのか ===== -->
-    <section id="s2" class="slide">
-      <div class="slide__inner">
-        <p class="eyebrow"><span class="eyebrow__no">02</span> WHY</p>
-        <h2 class="reveal">なぜ作ったのか</h2>
-        <p class="lead reveal">HTMLにまとめる機会は多い。毎回ゼロから考えるのは、非効率だった。</p>
-        <div class="cards cards--3">
-          <article class="card reveal">
-            <span class="card__icon" aria-hidden="true">📚</span>
-            <h3>機会が多い</h3>
-            <p>授業内容や企画を、HTMLスライドにまとめることが多い。</p>
+    <section id="examples" class="section">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Examples</p>
+          <h2>成果物のファーストビューで、完成形を確認する。</h2>
+          <p class="lead">掲載中の作例は全<span data-example-count>0</span>件。ファーストビュー画像から、完成形の雰囲気を確認できます。</p>
+        </div>
+        <div class="example-panel" data-example-panel>
+          <div class="example-grid" data-example-grid></div>
+        </div>
+        <div class="section-actions">
+          <button class="button button--ghost" type="button" data-more-examples aria-expanded="false">もっと見る</button>
+          <button class="button button--ghost hidden" type="button" data-close-examples>閉じる</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">What you can do</p>
+          <h2>スライド制作を、流れで使える形にする。</h2>
+          <p class="lead">prompt単体ではなく、正本ファイルとレビューまで含めた制作手順として整理しています。</p>
+        </div>
+        <div class="grid-3">
+          <article class="feature-card">
+            <span class="feature-card__icon">企</span>
+            <h3>企画を整理する</h3>
+            <p>雑メモやアイデアから、目的、対象、トーン、採用方針を固めます。</p>
           </article>
-          <article class="card reveal">
-            <span class="card__icon" aria-hidden="true">🔁</span>
-            <h3>毎回ゼロから</h3>
-            <p>構成・文章・画像・実装の流れを、その都度ゼロから考えていた。</p>
+          <article class="feature-card">
+            <span class="feature-card__icon">画</span>
+            <h3>画像方針を決める</h3>
+            <p>画像の役割、配置、ファイル名、画像内文字をHTML化前に整理します。</p>
           </article>
-          <article class="card reveal">
-            <span class="card__icon" aria-hidden="true">📈</span>
-            <h3>安定させたい</h3>
-            <p>作業を効率化し、仕上がりの品質を一定に保ちたかった。</p>
+          <article class="feature-card">
+            <span class="feature-card__icon">実</span>
+            <h3>HTML化してレビューする</h3>
+            <p>実装ブリーフで渡し、Codexレビューで表示崩れや可読性を確認します。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== Slide 3: これまでの課題 ===== -->
-    <section id="s3" class="slide slide--alt">
-      <div class="slide__inner">
-        <p class="eyebrow"><span class="eyebrow__no">03</span> PROBLEM</p>
-        <h2 class="reveal">これまでの課題</h2>
-        <p class="lead reveal">「AIにいきなり作らせる」だけでは、4つのズレが起きやすい。</p>
-        <div class="cards cards--4">
-          <article class="card card--problem reveal">
-            <span class="card__num" aria-hidden="true">01</span>
-            <h3>構成が弱くなる</h3>
-            <p>いきなりHTML化すると、土台の構成がぶれる。</p>
+    <section id="how" class="section">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">How it works</p>
+          <h2>使う順番がわかる、5つの工程。</h2>
+          <p class="lead">まず全体像を見て、必要な工程のpromptだけを使えるようにします。</p>
+        </div>
+        <div class="map">
+          <article class="map__item"><span class="map__num">1</span><h3>壁打ち</h3><p>アイデア、課題、確認質問を整理します。</p></article>
+          <article class="map__item"><span class="map__num">2</span><h3>正本化</h3><p>project.mdとimage-assets.mdにまとめます。</p></article>
+          <article class="map__item"><span class="map__num">3</span><h3>画像設計</h3><p>必要な画像と役割を決めてから生成します。</p></article>
+          <article class="map__item"><span class="map__num">4</span><h3>HTML化</h3><p>実装条件を渡してHTML/CSS/JSにします。</p></article>
+          <article class="map__item"><span class="map__num">5</span><h3>レビュー</h3><p>実ファイルを確認して仕上げます。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Starter route</p>
+          <h2>初めてなら、この順番だけで始める。</h2>
+          <p class="lead">全<span data-prompt-count>0</span>件のpromptから、最初に使いやすいものだけを抜き出しました。</p>
+        </div>
+        <div class="route-list" data-starter-route></div>
+      </div>
+    </section>
+
+    <section id="prompts" class="section">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Prompt library</p>
+          <h2>必要な工程から、使うpromptを選ぶ。</h2>
+          <p class="lead">各カードで役割と使うタイミングを確認し、必要なMarkdownファイルを開いて使えます。</p>
+        </div>
+        <div class="prompt-grid" data-prompt-grid></div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Source of truth</p>
+          <h2>会話ではなく、正本ファイルを渡す。</h2>
+          <p class="lead">セッションが変わっても制作意図が失われないよう、役割ごとに正本を分けます。</p>
+        </div>
+        <div class="source-grid">
+          <article class="source-card">
+            <h3>project.md</h3>
+            <p>企画、構成、文章、トーンの正本。制作意図の中心です。</p>
           </article>
-          <article class="card card--problem reveal">
-            <span class="card__num" aria-hidden="true">02</span>
-            <h3>画像が曖昧</h3>
-            <p>画像方針が定まらず、後からの修正が増える。</p>
+          <article class="source-card">
+            <h3>image-assets.md</h3>
+            <p>画像の役割、配置、ファイル名、画像内文字の正本です。</p>
           </article>
-          <article class="card card--problem reveal">
-            <span class="card__num" aria-hidden="true">03</span>
-            <h3>場当たりprompt</h3>
-            <p>promptが毎回バラバラで、品質が安定しない。</p>
-          </article>
-          <article class="card card--problem reveal">
-            <span class="card__num" aria-hidden="true">04</span>
-            <h3>文脈が消える</h3>
-            <p>セッションが変わると、前提や方針が失われやすい。</p>
+          <article class="source-card">
+            <h3>implementation-brief.md</h3>
+            <p>実装条件、禁止事項、完了条件を短く渡すための指示書です。</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== Slide 4: 解決方針 ===== -->
-    <section id="s4" class="slide">
-      <div class="slide__inner">
-        <p class="eyebrow"><span class="eyebrow__no">04</span> APPROACH</p>
-        <h2 class="reveal">解決方針：工程を分解する</h2>
-        <p class="lead reveal">「見せ方を整え、行動につなげる」ために、HTMLスライド制作を5つの工程に分けた。</p>
-
-        <div class="approach-showcase">
-          <figure class="proposal-visual reveal">
-            <img src="assets/cover-smart-proposal.png"
-                 width="1672"
-                 height="941"
-                 alt="提案コンセプトのビジュアル。スマホで伝わる提案設計、見せ方を整え行動につなげるというコピーと、提案タスクを整理するスマホUIが描かれている。">
-          </figure>
-
-          <div class="approach-panel reveal">
-            <p class="approach-panel__label">制作の分解</p>
-            <ol class="flow flow--compact" aria-label="制作の5工程">
-              <li class="flow__step"><span class="flow__no">1</span><span class="flow__name">企画整理</span></li>
-              <li class="flow__step"><span class="flow__no">2</span><span class="flow__name">スライド構成</span></li>
-              <li class="flow__step"><span class="flow__no">3</span><span class="flow__name">画像設計</span></li>
-              <li class="flow__step"><span class="flow__no">4</span><span class="flow__name">HTML化</span></li>
-              <li class="flow__step flow__step--end"><span class="flow__no">5</span><span class="flow__name">レビュー</span></li>
-            </ol>
-            <p class="note">工程を独立させることで、後の工程へ渡しやすくなり、提案資料としての見せ方も安定する。</p>
-          </div>
+    <section class="cta">
+      <div class="container">
+        <h2>次のHTMLスライド制作を、最初の一手から整理する。</h2>
+        <p class="lead">まずは全体工程を確認し、必要なpromptから使い始めてください。</p>
+        <div class="hero__actions">
+          <a class="button" href="prompts/00_作業の流れ.md">全体工程を見る</a>
+          <a class="button" href="#prompts">prompt一覧へ</a>
         </div>
       </div>
     </section>
-
-    <!-- ===== Slide 5: 作成したワークフロー ===== -->
-    <section id="s5" class="slide slide--alt">
-      <div class="slide__inner">
-        <p class="eyebrow"><span class="eyebrow__no">05</span> WORKFLOW</p>
-        <h2 class="reveal">作成したワークフロー</h2>
-        <p class="lead reveal">全工程のうち、主要なステップに圧縮したロードマップ。</p>
-        <ol class="roadmap reveal" aria-label="制作ワークフローの主要ステップ">
-          <li class="roadmap__item"><span class="roadmap__dot">1</span><div><h3>初回壁打ち</h3><p>テーマ・方向性を対話で整理する</p></div></li>
-          <li class="roadmap__item"><span class="roadmap__dot">2</span><div><h3>方針確定</h3><p>タイトル・構成・トーンを固める</p></div></li>
-          <li class="roadmap__item"><span class="roadmap__dot">3</span><div><h3>project.md</h3><p>企画・原稿・トーンを正本化</p></div></li>
-          <li class="roadmap__item"><span class="roadmap__dot">4</span><div><h3>スライド構成</h3><p>1スライド1メッセージで設計</p></div></li>
-          <li class="roadmap__item"><span class="roadmap__dot">5</span><div><h3>image-assets.md</h3><p>画像の役割・配置・名前を正本化</p></div></li>
-          <li class="roadmap__item"><span class="roadmap__dot">6</span><div><h3>画像生成</h3><p>1枚ずつ、役割を決めて生成</p></div></li>
-          <li class="roadmap__item"><span class="roadmap__dot">7</span><div><h3>Claude CodeでHTML化</h3><p>2つの正本を渡して実装</p></div></li>
-          <li class="roadmap__item roadmap__item--last"><span class="roadmap__dot">8</span><div><h3>Codexで仕上げレビュー</h3><p>実ファイルを正として確認</p></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ===== Slide 6: 重要な工夫 ===== -->
-    <section id="s6" class="slide">
-      <div class="slide__inner">
-        <p class="eyebrow"><span class="eyebrow__no">06</span> KEY IDEA</p>
-        <h2 class="reveal">重要な工夫：2つの「正本」</h2>
-        <p class="lead reveal">単なるprompt集ではなく、ズレを防ぐ仕組みとして設計した。</p>
-        <div class="compare">
-          <article class="compare__col reveal">
-            <h3 class="compare__title"><code>project.md</code></h3>
-            <p class="compare__role">企画・構成・原稿・トーンの正本</p>
-            <ul class="ticks">
-              <li>発表テーマと軸を固定する</li>
-              <li>文章とトーンを一元管理する</li>
-              <li>構成のズレを防ぐ</li>
-            </ul>
-          </article>
-          <article class="compare__col reveal">
-            <h3 class="compare__title"><code>image-assets.md</code></h3>
-            <p class="compare__role">画像の役割・配置・ファイル名の正本</p>
-            <ul class="ticks">
-              <li>画像を1枚ずつ役割で管理する</li>
-              <li>HTML化前に画像方針を確定する</li>
-              <li>配置とファイル名のズレを防ぐ</li>
-            </ul>
-          </article>
-        </div>
-        <div class="handoff reveal" aria-label="2つの正本からClaude CodeとCodexへの流れ">
-          <span class="handoff__src">2つの正本</span>
-          <span class="handoff__arrow" aria-hidden="true">→</span>
-          <span class="handoff__node">Claude Code<small>HTML化</small></span>
-          <span class="handoff__arrow" aria-hidden="true">→</span>
-          <span class="handoff__node">Codex<small>実ファイルでレビュー</small></span>
-        </div>
-        <p class="note reveal">外部ライブラリなし・<code>file:///</code>で開ける構成を前提にしている。</p>
-      </div>
-    </section>
-
-    <!-- ===== Slide 7: 使用例 / 作品紹介 ===== -->
-    <section id="s7" class="slide slide--alt">
-      <div class="slide__inner">
-        <p class="eyebrow"><span class="eyebrow__no">07</span> EXAMPLE</p>
-        <h2 class="reveal">使用例 / 作品紹介</h2>
-        <p class="lead reveal">このワークフローで作成したHTML成果物を、公開URLで確認できます。</p>
-
-        <div class="examples">
-          <article class="example-card reveal">
-            <a class="example-card__media"
-               href="https://hidden-moon-26eb.nirayuki15.workers.dev/"
-               target="_blank"
-               rel="noopener"
-               aria-label="いなげ若者選挙プロジェクト 提案資料を新しいタブで開く">
-              <img src="assets/examples/thumb-inage-election.png"
-                   width="1672"
-                   height="941"
-                   alt="いなげ若者選挙プロジェクト提案資料のファーストビュー。稲毛の街並みと女子学生、投票後のまち歩きを訴求する表紙。">
-              <span class="example-card__badge">HTMLスライド</span>
-            </a>
-            <div class="example-card__body">
-              <h3>いなげ若者選挙プロジェクト 提案資料</h3>
-              <p>投票済証明書・QR・地域回遊LPを軸にした、地域提案型のHTMLスライド。</p>
-              <a class="btn" href="https://hidden-moon-26eb.nirayuki15.workers.dev/" target="_blank" rel="noopener">成果物を見る</a>
-            </div>
-          </article>
-
-          <article class="example-card reveal">
-            <a class="example-card__media"
-               href="https://raspy-hat-e8a0.nirayuki15.workers.dev/"
-               target="_blank"
-               rel="noopener"
-               aria-label="共創型TikTok CM企画案を新しいタブで開く">
-              <img src="assets/examples/thumb-tiktok-cm.png"
-                   width="1672"
-                   height="941"
-                   alt="共創型TikTok CM企画案のファーストビュー。ユーザー発のCM案を企業が公式CM化する企画の表紙。">
-              <span class="example-card__badge">企画資料</span>
-            </a>
-            <div class="example-card__body">
-              <h3>共創型TikTok CM企画案</h3>
-              <p>ユーザー投稿の短尺CM案を企業が選び、公式CM化する流れをまとめた企画資料。</p>
-              <a class="btn" href="https://raspy-hat-e8a0.nirayuki15.workers.dev/" target="_blank" rel="noopener">成果物を見る</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Slide 8: まとめ ===== -->
-    <section id="s8" class="slide slide--summary">
-      <div class="slide__inner">
-        <p class="eyebrow"><span class="eyebrow__no">08</span> SUMMARY</p>
-        <h2 class="reveal">まとめ：使い回せる制作フローへ</h2>
-
-        <div class="summary">
-          <ul class="summary__points reveal">
-            <li>毎回ゼロから考えない</li>
-            <li>工程を分けて、品質を安定させる</li>
-            <li>授業・企画・提案資料に再利用できる</li>
-          </ul>
-
-          <!-- 再利用サイクル図（HTML/CSSで作図） -->
-          <div class="cycle reveal" role="img" aria-label="制作の循環フロー：メモ・企画・project.md・画像・実装・レビューを経て再利用し、次の制作につながる">
-            <ul class="cycle__list">
-              <li>メモ</li>
-              <li>企画</li>
-              <li>project.md</li>
-              <li>画像</li>
-              <li>実装</li>
-              <li>レビュー</li>
-              <li class="cycle__reuse">再利用</li>
-            </ul>
-            <p class="cycle__loop">↺ 次の制作へ</p>
-          </div>
-        </div>
-
-        <div class="cta reveal">
-          <p>prompt集はGitHubで閲覧できます。</p>
-          <a class="btn btn--lg"
-             href="https://github.com/uiharuyuki/niray-04_html-prompts/tree/main/prompts"
-             target="_blank"
-             rel="noopener">プロンプトを見る</a>
-        </div>
-
-        <p class="closing reveal">毎回ゼロから作らない。<strong>仕組みで、安定して作る。</strong></p>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="foot">
-    <p>AIと作るHTMLスライド資料制作ワークフロー</p>
+  <footer class="site-footer">
+    <div class="container">AI HTML Slide Prompt Workflow</div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

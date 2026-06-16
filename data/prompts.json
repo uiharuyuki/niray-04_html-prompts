@@ -1,0 +1,137 @@
+[
+  {
+    "id": "flow",
+    "file": "00_作業の流れ.md",
+    "title": "全体工程",
+    "phase": "最初に確認",
+    "summary": "全工程、入力、出力、完了条件、再開時の正本確認順をまとめる。",
+    "href": "prompts/00_作業の流れ.md",
+    "starter": true
+  },
+  {
+    "id": "rules",
+    "file": "00_共通ルール.md",
+    "title": "共通ルール",
+    "phase": "全工程",
+    "summary": "HTML化、画像、レビュー、ファイル管理で共通して守る条件を定義する。",
+    "href": "prompts/00_共通ルール.md",
+    "starter": false
+  },
+  {
+    "id": "first-feedback",
+    "file": "01_最初に投げるprompt.md",
+    "title": "初回フィードバック",
+    "phase": "企画整理",
+    "summary": "アイデアや雑メモから課題、確認質問、改善案を出す。",
+    "href": "prompts/01_最初に投げるprompt.md",
+    "starter": true
+  },
+  {
+    "id": "direction",
+    "file": "02_フィードバック回答・方針確定prompt.md",
+    "title": "方針確定",
+    "phase": "企画整理",
+    "summary": "回答をもとに採用、保留、不採用を整理し、次工程の軸を固める。",
+    "href": "prompts/02_フィードバック回答・方針確定prompt.md",
+    "starter": false
+  },
+  {
+    "id": "project-md",
+    "file": "03_決定内容を.mdにまとめる.md",
+    "title": "project.md化",
+    "phase": "正本作成",
+    "summary": "確定した方針を、過去会話なしでも読める制作仕様書にまとめる。",
+    "href": "prompts/03_決定内容を.mdにまとめる.md",
+    "starter": false
+  },
+  {
+    "id": "one-shot",
+    "file": "03-1_企画一発生成（project＋image-assets）.md",
+    "title": "時短ルート",
+    "phase": "正本作成",
+    "summary": "project.mdとimage-assets.mdをまとめて作る時短ルート。",
+    "href": "prompts/03-1_企画一発生成（project＋image-assets）.md",
+    "starter": true
+  },
+  {
+    "id": "structure",
+    "file": "04_スライド構成・原稿・設計.md",
+    "title": "構成・原稿・設計",
+    "phase": "スライド設計",
+    "summary": "section単位で、1メッセージ1スライドの構成案を作る。",
+    "href": "prompts/04_スライド構成・原稿・設計.md",
+    "starter": false
+  },
+  {
+    "id": "image-assets",
+    "file": "05_画像アセット策定.md",
+    "title": "画像アセット策定",
+    "phase": "画像設計",
+    "summary": "画像の役割、配置、ファイル名、画像内文字を仕様化する。",
+    "href": "prompts/05_画像アセット策定.md",
+    "starter": false
+  },
+  {
+    "id": "image-prompt",
+    "file": "06_画像生成prompt作成.md",
+    "title": "画像生成prompt",
+    "phase": "画像生成",
+    "summary": "1枚分の画像生成promptと検品項目を作る。",
+    "href": "prompts/06_画像生成prompt作成.md",
+    "starter": false
+  },
+  {
+    "id": "image-batch",
+    "file": "06-1_画像一括生成（Codex）.md",
+    "title": "画像一括生成",
+    "phase": "画像生成",
+    "summary": "Codexで画像をまとめて生成し、目視確認できる状態にする。",
+    "href": "prompts/06-1_画像一括生成（Codex）.md",
+    "starter": false
+  },
+  {
+    "id": "image-improve",
+    "file": "07_画像改善prompt作成.md",
+    "title": "画像改善prompt",
+    "phase": "画像改善",
+    "summary": "生成画像の残す要素と変える要素を分け、修正promptを作る。",
+    "href": "prompts/07_画像改善prompt作成.md",
+    "starter": false
+  },
+  {
+    "id": "html-build",
+    "file": "08_Claude Code用HTML化.md",
+    "title": "HTML化",
+    "phase": "実装",
+    "summary": "project.md、image-assets.md、画像を渡してHTML/CSS/JS化する。",
+    "href": "prompts/08_Claude Code用HTML化.md",
+    "starter": false
+  },
+  {
+    "id": "implementation-brief",
+    "file": "08-1_implementation-brief.md",
+    "title": "実装ブリーフ",
+    "phase": "実装",
+    "summary": "実装条件、禁止事項、完了条件を短く渡すための指示書。",
+    "href": "prompts/08-1_implementation-brief.md",
+    "starter": true
+  },
+  {
+    "id": "codex-review",
+    "file": "09_Codex用仕上げレビュー.md",
+    "title": "仕上げレビュー",
+    "phase": "レビュー",
+    "summary": "実ファイルを正として確認し、表示崩れや可読性を仕上げる。",
+    "href": "prompts/09_Codex用仕上げレビュー.md",
+    "starter": true
+  },
+  {
+    "id": "codex-review-only",
+    "file": "09-1_Codex用レビューのみ.md",
+    "title": "レビューのみ",
+    "phase": "レビュー",
+    "summary": "修正せず、指摘や提案だけを受け取るためのprompt。",
+    "href": "prompts/09-1_Codex用レビューのみ.md",
+    "starter": false
+  }
+]

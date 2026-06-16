@@ -1,0 +1,15 @@
+{
+  "name": "niray-04-html-prompts-lp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build:data": "node tools/build-data-js.js",
+    "check:data": "node tools/build-data-js.js --check",
+    "screenshots": "node tools/capture-first-views.js"
+  },
+  "devDependencies": {
+    "playwright": "latest"
+  }
+}
+
