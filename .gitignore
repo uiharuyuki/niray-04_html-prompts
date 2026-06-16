@@ -5,3 +5,6 @@ playwright-report/
 test-results/
 npm-debug.log*
 
+# ローカル用アップロードバット（公開しない）
+GitHubにアップロード.bat
+
