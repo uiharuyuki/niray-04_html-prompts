@@ -24,7 +24,7 @@ window.NIRAY_PROMPTS = [
     "file": "01_最初に投げるprompt.md",
     "title": "初回フィードバック",
     "phase": "企画整理",
-    "summary": "アイデアや雑メモから課題、確認質問、改善案を出す。",
+    "summary": "アイデアや雑メモから課題・確認質問・改善案を出す汎用の壁打ち。HTML化するときは末尾のアドオンを足す。",
     "href": "prompts/01_最初に投げるprompt.md",
     "starter": true
   },
@@ -33,7 +33,7 @@ window.NIRAY_PROMPTS = [
     "file": "02_フィードバック回答・方針確定prompt.md",
     "title": "方針確定",
     "phase": "企画整理",
-    "summary": "回答をもとに採用、保留、不採用を整理し、次工程の軸を固める。",
+    "summary": "回答をもとに採用・保留・不採用を整理する任意工程。使うかどうかは状況に応じて判断する。",
     "href": "prompts/02_フィードバック回答・方針確定prompt.md",
     "starter": false
   },
@@ -45,15 +45,6 @@ window.NIRAY_PROMPTS = [
     "summary": "確定した方針を、過去会話なしでも読める制作仕様書にまとめる。",
     "href": "prompts/03_決定内容を.mdにまとめる.md",
     "starter": false
-  },
-  {
-    "id": "one-shot",
-    "file": "03-1_企画一発生成（project＋image-assets）.md",
-    "title": "時短ルート",
-    "phase": "正本作成",
-    "summary": "project.mdとimage-assets.mdをまとめて作る時短ルート。",
-    "href": "prompts/03-1_企画一発生成（project＋image-assets）.md",
-    "starter": true
   },
   {
     "id": "structure",
@@ -69,7 +60,7 @@ window.NIRAY_PROMPTS = [
     "file": "05_画像アセット策定.md",
     "title": "画像アセット策定",
     "phase": "画像設計",
-    "summary": "画像の役割、配置、ファイル名、画像内文字を仕様化する。",
+    "summary": "画像の役割・配置・ファイル名・画像内文字を仕様化し、作業フォルダ一式をzipで出力する。",
     "href": "prompts/05_画像アセット策定.md",
     "starter": false
   },

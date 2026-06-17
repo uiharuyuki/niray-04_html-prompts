@@ -69,7 +69,7 @@
 
 1. `00_作業の流れ.md`
 2. `01_最初に投げるprompt.md`
-3. `03-1_企画一発生成（project＋image-assets）.md`
+3. `03_決定内容を.mdにまとめる.md`
 4. `08-1_implementation-brief.md`
 5. `09_Codex用仕上げレビュー.md`
 
